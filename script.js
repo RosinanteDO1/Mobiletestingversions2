@@ -11,14 +11,14 @@ enterBtn.onclick = () => {
   if (site) {
     site.style.display = "block";
   }
-
+  document.body.style.backgroundColor = "black";
   // 2. Скрываем прелоадер
   preloader.style.opacity = "0";
   
   setTimeout(() => {
     preloader.style.display = "none";
     document.body.classList.remove('preloader-active');
-    
+    document.body.style.backgroundColor = "#F3E0D0";
     // Перезапускаем наблюдатель для анимаций, чтобы текст появился сразу после входа
     refreshObserver(); 
 
